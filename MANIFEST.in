@@ -1,0 +1,14 @@
+include LICENSE README.md CHANGELOG.md CONTRIBUTING.md SECURITY.md PRIVACY.md CODE_OF_CONDUCT.md
+include pyproject.toml run.ps1 .editorconfig .gitattributes .gitignore
+recursive-include assistant_app *.py
+recursive-include tests *.py
+recursive-include scripts *.py
+recursive-include docs *.md
+recursive-include .github *.yml *.yaml *.md
+prune .local-notes
+prune .venv
+prune .venv-check
+prune build
+prune dist
+global-exclude __pycache__ *.py[cod] .env .env.* *.log *.pem *.key *.p12 *.pfx
+global-exclude state.json preferences.bin client_secret*.json credentials*.json token*.json

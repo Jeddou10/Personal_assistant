@@ -1,0 +1,1 @@
+"""Composed native desktop frontend."""
